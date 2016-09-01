@@ -4,6 +4,7 @@ public class Vehicle {
 	private String make;
 	private String model;
 	private String modelType;
+	private String numDoor;
 	private String vehicleType;
 	private String mileage;
 		
@@ -11,10 +12,11 @@ public class Vehicle {
 	public Vehicle() {
 	}
 	
-	public Vehicle(String make, String model, String modelType, String vehicleType, String mileage) {
+	public Vehicle(String make, String model, String modelType, String numDoor, String vehicleType, String mileage) {
 		this.make = make;
 		this.model = model;
 		this.modelType = modelType;
+		this.modelType = numDoor;
 		this.vehicleType = vehicleType;
 		this.mileage = mileage;
 	}
@@ -44,6 +46,14 @@ public class Vehicle {
 		this.modelType = modelType;
 	}
 
+	public String getNumDoor() {
+		return numDoor;
+	}
+
+	public void setNumDoor(String numDoor) {
+		this.numDoor = numDoor;
+	}
+
 	public String getVehicleType() {
 		return vehicleType;
 	}
@@ -51,7 +61,6 @@ public class Vehicle {
 	public void setVehicleType(String vehicleType) {
 		this.vehicleType = vehicleType;
 	}
-
 	public String getMileage() {
 		return mileage;
 	}
@@ -62,7 +71,7 @@ public class Vehicle {
 
 	@Override
 	public String toString() {
-		return "Vehicle [make=" + make + ", model=" + model + ", modelType=" + modelType + ", vehicleType=" + vehicleType + ", mileage" + mileage + "]";
+		return "Vehicle [make=" + make + ", model=" + model + ", modelType=" + modelType + ", Style=" + numDoor + ", vehicleType=" + vehicleType + ", mileage" + mileage + "]";
 	}
 
 }

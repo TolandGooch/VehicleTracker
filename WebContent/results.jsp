@@ -14,6 +14,7 @@
 			<th>Make</th>
 			<th>Model</th>
 			<th>Model Type</th>
+			<th>Style</th>
 			<th>Vehicle Type</th>
 			<th>Mileage</th>
 		</tr>
@@ -22,6 +23,7 @@
 			<td><c:out value="${vehicle.make}"/></td>
 			<td><c:out value="${vehicle.model}"/></td>
 			<td><c:out value="${vehicle.modelType}"/></td>
+			<td><c:out value="${vehicle.numDoor}"/></td>
 			<td><c:out value="${vehicle.vehicleType}"/></td>
 			<td><c:out value="${vehicle.mileage}"/></td>
 		</tr>

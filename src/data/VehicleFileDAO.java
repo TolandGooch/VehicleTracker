@@ -31,10 +31,11 @@ public void init() {
 			String make = tokens[1];
 			String model = tokens[2];
 			String modelType = tokens[3];
-			String vehicleType = tokens[4];
-			String mileage = tokens[5];
+			String numDoor = tokens[4];
+			String vehicleType = tokens[5];
+			String mileage = tokens[6];
 			
-			vehicles.add(new Vehicle(make, model, modelType, vehicleType, mileage));
+			vehicles.add(new Vehicle(make, model, modelType, numDoor, vehicleType, mileage));
 		}
 	} catch (Exception e) {
 		System.err.println(e);
@@ -110,6 +111,17 @@ public Vehicle getDataByVehicleType(String vehicleType) {
 	return v;
 }
 
+@Override
+public Vehicle getDataByNumDoor(String numDoor) {
+	Vehicle v = null;
+	for (Vehicle vehicle : vehicles) {
+		if (vehicle.getVehicleType().equalsIgnoreCase(numDoor)) {
+			v = vehicle;
+			break;
+		}
+	}
+	return v;
+}
 @Override
 public Vehicle getDataByMileage(String mileage) {
 	Vehicle v = null;
