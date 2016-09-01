@@ -1,13 +1,13 @@
-id,make,model,modeltype,vehicleType,mileage
-1,Honda,civic,EX,coupe,car, 10_000
-2,Honda,accord,EX,4 door,car, 10_000
+id,make,model,modeltype,numDoor, vehicleType,mileage
+1,Honda,civic,EX,2 door coupe,car, 10_000
+2,Honda,accord,EX,4 door sedan,car, 10_000
 3,Honda,Passport,EX,4 door,SUV, 10_000
 4,Honda,Ridgeline,EX,4 door,truck, 10_000
-5,Ford,F150,Base,coupe,truck, 10_000
+5,Ford,F150,Base,4 door,truck, 10_000
 6,Ford,F250,4x4,4 door,Mid Truck, 10_000
 7,Ford,F350,Super Duty,4 door,Heavy Truck, 10_000
 8,Ford,F650,Work Force,4 door,Heavy Truck, 50_000
-9,Acura,Integra,EX,coupe,car, 80_000
+9,Acura,Integra,EX,2 door coupe,car, 80_000
 10,Acura,MDX,EX,4 door,SUV, 10_000
 11,Acura,Passport,EX,4 door,SUV, 10_000
 12,Acura,Ridgeline,EX,4 door,truck, 10_000

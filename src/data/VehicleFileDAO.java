@@ -100,6 +100,18 @@ public Vehicle getDataByModelType(String modelType) {
 }
 
 @Override
+public Vehicle getDataByNumDoor(String numDoor) {
+	Vehicle v = null;
+	for (Vehicle vehicle : vehicles) {
+		if (vehicle.getVehicleType().equalsIgnoreCase(numDoor)) {
+			v = vehicle;
+			break;
+		}
+	}
+	return v;
+}
+
+@Override
 public Vehicle getDataByVehicleType(String vehicleType) {
 	Vehicle v = null;
 	for (Vehicle vehicle : vehicles) {
@@ -111,17 +123,6 @@ public Vehicle getDataByVehicleType(String vehicleType) {
 	return v;
 }
 
-@Override
-public Vehicle getDataByNumDoor(String numDoor) {
-	Vehicle v = null;
-	for (Vehicle vehicle : vehicles) {
-		if (vehicle.getVehicleType().equalsIgnoreCase(numDoor)) {
-			v = vehicle;
-			break;
-		}
-	}
-	return v;
-}
 @Override
 public Vehicle getDataByMileage(String mileage) {
 	Vehicle v = null;

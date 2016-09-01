@@ -16,7 +16,7 @@ public class Vehicle {
 		this.make = make;
 		this.model = model;
 		this.modelType = modelType;
-		this.modelType = numDoor;
+		this.numDoor= numDoor;
 		this.vehicleType = vehicleType;
 		this.mileage = mileage;
 	}
