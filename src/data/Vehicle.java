@@ -1,18 +1,25 @@
 package data;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
 public class Vehicle {
+	@NotNull
+	private Integer id;
 	private String make;
 	private String model;
 	private String modelType;
 	private String numDoor;
 	private String vehicleType;
+	@NotNull
 	private String mileage;
 		
 	// Constructors
 	public Vehicle() {
 	}
 	
-	public Vehicle(String make, String model, String modelType, String numDoor, String vehicleType, String mileage) {
+	public Vehicle(Integer id, String make, String model, String modelType, String numDoor, String vehicleType, String mileage) {
+		this.id =id;
 		this.make = make;
 		this.model = model;
 		this.modelType = modelType;
@@ -22,10 +29,18 @@ public class Vehicle {
 	}
 	
 	// Getter and Setters
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
 	public String getMake() {
 		return make;
 	}
-
+	
 	public void setMake(String make) {
 		this.make = make;
 	}
@@ -66,6 +81,16 @@ public class Vehicle {
 	}
 
 	public void setMileage(String mileage) {
+		this.mileage = mileage;
+	}
+	
+	public void setVehicle(Integer id, String make, String model, String modelType, String numDoor, String vehicleType, String mileage) {
+		this.id =id;
+		this.make = make;
+		this.model = model;
+		this.modelType = modelType;
+		this.numDoor= numDoor;
+		this.vehicleType = vehicleType;
 		this.mileage = mileage;
 	}
 
