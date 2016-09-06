@@ -1,14 +1,17 @@
 id,make,model,modeltype,numDoor, vehicleType,mileage
-1,Honda,civic,EX,2 door coupe,car,10000
-2,Honda,accord,EX,4 door sedan,car,10000
+1,Honda,Civic,EX,2 door coupe,Car,10000
+2,Honda,Accord,EX,4 door sedan,Car,10000
 3,Honda,Passport,EX,4 door,SUV,10000
-4,Honda,Ridgeline,EX,4 door,truck,10000
-5,Ford,F150,Base,4 door,truck,10000
+4,Honda,Ridgeline,EX,4 door,Truck,10000
+5,Ford,F150,Base,4 door,Truck,10000
 6,Ford,F250,4x4,4 door,Mid Truck,10000
 7,Ford,F350,Super Duty,4 door,Heavy Truck,10000
 8,Ford,F650,Work Force,4 door,Heavy Truck,50000
-9,Acura,Integra,EX,2 door coupe,car,80000
+9,Acura,ILX,EX,2 door coupe,Car,80000
 10,Acura,MDX,EX,4 door,SUV,10000
-11,Acura,Passport,EX,4 door,SUV,10000
-12,Acura,Ridgeline,EX,4 door,truck,10000
-13,bmw, wnsdf, dfsdf,sdfs,sdf,123123
+11,Acura,RDX,EX,4 door,SUV,10000
+12,Acura,TLX,EX,4 door,Car,10000
+13,BMW, 3 Series, 325,2 door,Car,500
+14,BMW, 5 Series, 540i,4 door,Car,1000
+15,BMW, 7 Series, 740il,4 door,Car,1500
+16,BMW, 6 Series, E24,2 door,Car,50000

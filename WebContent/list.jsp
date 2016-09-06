@@ -6,15 +6,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" media="all" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Vehicle Tracker Data Results</title>
 </head>
 <body>
+	<div class="page_container">
+			<div class="bannerArea">
+				<div class="banner_right"><a href="https://tolandgooch.com">Contact Me</a> <a href="index.html">Site Index</a></div>s
+				<div class="banner_left"><a href="index.html">
+					<img src="images/template/largem.jpg" alt="Large Marge" width="248" height="105" border="0" /></a></div>
+			</div>
+			<div class="contentArea"><!-- InstanceBeginEditable name="heading" -->
+				<div class="content_title">
 <h1>Vehicle Tracker Data Table</h1>
+</div>
+			<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="navigation" -->
+			<div class="content_left"><a href="inddex.html" class="nav_first">Home Page</a> <a href="GetVehicle.do" class="nav_last">Vehicle list</a></div>
+			<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="content" -->
+			<div class="content_center">
+
 <table border="1px" cellpadding="0" cellspacing="0">
 		<thead>
 		<tr>
-		<th width="10%">id</th><th width="15%">Make</th><th width="10%">Model</th><th width="10%">ModelType</th><th width="10%">VehicleType</th><th width="10%">Mileage</th><th width="10%">actions</th>
+		<th width="20%">id</th><th width="25%">Make</th><th width="20%">Model</th><th width="20%">ModelType</th><th width="20%">VehicleType</th><th width="20%">Mileage</th><th width="20%">actions</th>
 		</tr>
 		</thead>
 		<tr>	
