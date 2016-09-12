@@ -11,8 +11,8 @@ public interface VehicleDAO {
 	public Vehicle getDataByVehicleType(String vehicleType);
 	public Vehicle getDataByMileage(String mileage);
 //	public void removeVehicle(Vehicle vehicle);
-	public List<Vehicle> addVehicle1(Vehicle vehicle);	
-	public List<Vehicle> removeVehicle(Vehicle vehicle);	
+	public void addVehicle1(Vehicle vehicle);	
+	public void removeVehicle(Vehicle vehicle);	
 	public List<Vehicle> edit(Vehicle vehicle);	
 	public List<Vehicle> getVehicles();
 	List<Vehicle> editVehicle(Vehicle s);

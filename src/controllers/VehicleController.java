@@ -45,7 +45,7 @@ public class VehicleController {
 		ModelAndView mv = new ModelAndView();
 		System.out.println("in remove vehicle");
 		mv.setViewName("results.jsp");
-		mv.addObject("vehicle", vehicleDAO.removeVehicle(vehicleDAO.getDataById(id)));
+		mv.addObject("vehicle");
 		return mv;
 	}
 	
@@ -116,38 +116,38 @@ public class VehicleController {
 		System.out.println(vehicle.getModel());
 //		mv.addObject("vehicles", vehicleDAO.add());
 		mv.setViewName("results.jsp");
-		mv.addObject("vehicles", vehicleDAO.addVehicle1(vehicle));	
+		mv.addObject("vehicles");	
 		return mv;
 	}
 	
-	// Update Vehicle 
-//	@RequestMapping(path = "updateVehicle.do", method = RequestMethod.GET)
-//	public ModelAndView updateVehicle(
-//		   	@RequestParam("id") int id, 
-//			@RequestParam("make") String make, 
-//			@RequestParam("make") String model, 
-//			@RequestParam("model") String modelType,
-//			@RequestParam("numDoor") String numDoor,
-//			@RequestParam("vehicleType") String vehicleType,
-//			@RequestParam("mileage") String mileage) {
-//		System.out.println("in update vehicle");
-//		System.out.println(id);
-//		System.out.println(vehicleDAO.getDataById(id).getMake());
-//		ModelAndView mv = new ModelAndView();
-//		Vehicle veh = new Vehicle();
-//		veh.setId(id);
-//		veh.setMake(make);
-//		veh.setModel(model);
-//		veh.setModelType(modelType);
-//		veh.setNumDoor(numDoor);
-//		veh.setVehicleType(vehicleType);
-//		veh.setMileage(mileage);
-////		mv.addObject("vehicles", vehicleDAO.edit());
-//		mv.setViewName("results.jsp");
-//		mv.addObject("vehicles", vehicleDAO.getVehicles());
-//		mv.addObject("v", vehicleDAO.getDataById(id));
-//		return mv;
-//	}
+	 //Update Vehicle 
+	@RequestMapping(path = "updateVehicle.do", method = RequestMethod.GET)
+	public ModelAndView updateVehicle(
+		   	@RequestParam("id") int id, 
+			@RequestParam("make") String make, 
+			@RequestParam("make") String model, 
+			@RequestParam("model") String modelType,
+			@RequestParam("numDoor") String numDoor,
+			@RequestParam("vehicleType") String vehicleType,
+			@RequestParam("mileage") String mileage) {
+		System.out.println("in update vehicle");
+		System.out.println(id);
+		System.out.println(vehicleDAO.getDataById(id).getMake());
+		ModelAndView mv = new ModelAndView();
+		Vehicle veh = new Vehicle();
+		veh.setId(id);
+		veh.setMake(make);
+		veh.setModel(model);
+		veh.setModelType(modelType);
+		veh.setNumDoor(numDoor);
+		veh.setVehicleType(vehicleType);
+		veh.setMileage(mileage);
+//		mv.addObject("vehicles", vehicleDAO.edit());
+		mv.setViewName("results.jsp");
+		mv.addObject("vehicles", vehicleDAO.getVehicles());
+		mv.addObject("v", vehicleDAO.getDataById(id));
+		return mv;
+	}
 	
 	@RequestMapping(value="/VehicleMaintenanceTracker-servlet", params="Edit",method=RequestMethod.POST)
     public void edit() {

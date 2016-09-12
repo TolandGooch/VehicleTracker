@@ -63,46 +63,9 @@
 			</div>
 			<div class="footerArea">
 				<div class="footer_left">©2016 Toland Gooch</div>
-				<div class="footer_right"><a href="#">Privacy Statement</a> • <a href="https://github.com/TolandGooch/VehicleTracker">View Code on GitHub</a></div>
+				<div class="footer_right"><a href="#">Privacy Statement</a> <a href="https://github.com/TolandGooch/VehicleTracker">View Code on GitHub</a></div>
 			</div>
 		</div>
-
-	
-	
-	
-	<%-- <form action="/VehicleMaintenanceTracker-servlet" method="GET">
-		<table>
-			<tr>
-				<td>Make</td>
-				<td><input type="text" name="make" value="${vehicle.make}"/></td>
-			</tr>
-			<tr>
-				<td>Model</td>
-				<td><input type="text" name="model" value="${vehicle.model}"/></td>
-			</tr>
-			<tr>
-				<td>Model type</td>
-				<td><input type="text" name="modelType" value="${vehicle.modelType}"/></td>
-			</tr>
-			<tr>
-				<td>Style</td>
-				<td><input type="text" name="numDoor " value="${vehicle.numDoor}"/></td>
-			</tr>
-			<tr>
-				<td>Vehicle Type</td>
-				<td><input type="text" name="vehicleType" value="${vehicle.vehicleType}"/></td>
-			</tr>
-			<tr>
-				<td>Mileage</td>
-				<td><input type="text" name="mileage" value="${vehicle.mileage}"/></td>
-			</tr>
-	</table>
-	</form>
-			<a href="editvehicle.do">Edit this vehicle</a><br>
-			<a href="deleteVehicle.do">Delete this vehicle</a>
-
- --%>
-
 		
 </body>
 	
